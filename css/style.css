@@ -1,0 +1,26 @@
+:root{
+  --naranja: #E57200;
+  --verde: #00E572;
+
+  --fondo: #000;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */  
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+      font-size: 1.6rem;
+      background-color: var(--fondo);
+  }
+
+  .barra{
+    background-color: var(--naranja);
+    display: flex;
+    justify-content: space-around;
+  }
